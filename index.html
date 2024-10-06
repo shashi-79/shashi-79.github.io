@@ -3,48 +3,194 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Let's play the Game</title>
-<style>
-    iframe {
-        min-height:800px;
-        max-height:100%;
-        width:100%;
+  <title>Gamology</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
     }
-</style>
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header img {
+      width: 200px;
+      display: block;
+      margin: 0 auto;
+    }
+    .logo {
+      width: 50px;
+      height: 50px;
+      display: block;
+      margin: 10px 10px;
+      justify-content: left;
+    }
+    header h1 {
+      margin: 10px 0 0 0;
+      font-size: 36px;
+      text-transform: uppercase;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    section {
+      padding: 40px;
+      margin: 20px auto;
+      max-width: 800px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    section h2 {
+      color: #333;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .quest {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      width: 50%;
+      margin: 20px auto;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .game-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px;
+      gap: 30px;
+      position: relative;
+    }
+    .game-section img {
+      max-width: 100%;
+      border-radiubs: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .game-section div {
+      max-width: 100%;
+      text-align: left;
+    }
+    button {
+      width: 100px;
+      position: absolute;
+      left: calc(50% - 50px);
+      bottom: 80px;
+      padding: 12px 20px;
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+    .pbl {
+      font-size: 14px;
+      font-weight: bold;
+      color: #333;
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      width: 50%;
+      margin: 20px auto;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background: #222;
+      color: #fff;
+      font-size: 14px;
+      margin-top: 40px;
+      bottom: 0px;
+    }
+  </style>
 </head>
 <body>
-  <h1 style="color:gold;background-color:#898878; font-family: Arial;font-size: 50px;"> Spending The Quality time</h1>
-  <p style="color:silver; background-color:#f0f0f0">
-    let's Enjoy the moments 
-  </p>
-</br>
+  <header>
+    <div class="logo">
+      <img class="logo" src="/logo.png" alt="Gamology Logo">
+    </div>
+    <img height="200px" src="/gamology.png" alt="Gamology Logo">
+    <nav>
+      <ul>
+        <li><a href="#ludo">Ludo</a></li>
+        <li><a href="#snake-ladders">Snake and Ladders</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="quest">
+    Tough times teach the hardest lessons.
+  </div>
 
-<bold>
-  <h2>
-    <a href="https://shashi-79.github.io/ludo">
-      ludo
-    </a>
-  </h2>
-</bold>
-<p style="color:red">
-Remember the time harder that learns you
-</p>
-<a>
-  <p style="color:blue">
-    preview
-  </p>
-  <iframe src="https://shashi-79.github.io./ludo" frameborder="2"></iframe>
+  <section id="ludo">
+    <h2>Ludo</h2>
+    <div class="game-section">
+      <img src="/ludo.png" alt="Ludo Game">
+      <button onclick="startLudo()">Play Ludo</button>
+      <div>
+      </div>
+    </div>
+  </section>
 
-  <a href="https://shashi-79.github.io/snake-ladder_game">
-    <h2>snake-ladder</h2>
-  </a>
+  <section id="snake-ladders">
+    <h2>Snake and Ladders</h2>
+    <div class="game-section">
+      <img src="/snake&ladder.png" alt="Snake and Ladders Game">
 
-  <p style="color:red">
-    
-  </p>
-  <p style="color:blue">
-    preview
-  </p>
-  <iframe src="https://shashi-79.github.io/snake-ladder_game/" frameborder="2" ></iframe>
+      <button onclick="startSnakeLadders()">Play Snake and Ladders</button>
+      <div>
+      </div>
+    </div>
+  </section>
+
+  <div class="pbl">
+    for Project Base lab(PBL)
+  </div>
+  <footer>
+    <p>
+      &copy; 2024 Gamology. All rights reserved.
+    </p>
+  </footer>
+
+  <script>
+    function startLudo() {
+      // alert('Starting Ludo Game!'+window.location.herf);
+      // Add logic to start the Ludo game
+      window.location.replace("https://shashi-79.github.io/ludo")
+    }
+
+    function startSnakeLadders() {
+      //alert('Starting Snake and Ladders Game!');
+      // Add logic to start the Snake and Ladders game
+      window.location.replace("https://shashi-79.github.io/snake-ladder_game/")
+    }
+  </script>
 </body>
 </html>
